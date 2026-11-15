@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: moon-orbit-web
+    runtime: python
+    plan: free
+    buildCommand: python -m pip install pipenv && pipenv sync && pipenv run python -c 'from app import ephemeris'
+    startCommand: pipenv run gunicorn --bind 0.0.0.0:$PORT app:app
+    envVars:
+      - key: PIPENV_VENV_IN_PROJECT
+        value: "1"
+      - key: PYTHON_VERSION
+        value: "3.12.14"
