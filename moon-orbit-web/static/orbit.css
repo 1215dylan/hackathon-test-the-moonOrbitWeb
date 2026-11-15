@@ -58,7 +58,7 @@ canvas {
     display: block;
     width: 100%;
     height: clamp(21rem, 60vh, 41rem);
-    background: #060b14;
+    background: #c31639;
     border-radius: .65rem;
     touch-action: none;
 
