@@ -1,14 +1,90 @@
-:root { color-scheme: dark; font: 16px Inter, system-ui, sans-serif; background: #0e1726; color: #eff4fc; }
-body { margin: 0; }
-main { width: min(100% - 2rem, 65rem); margin: 2rem auto; }
-.controls, .controls > * { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; }
-.controls { gap: 1rem 2rem; }
-button, input { font: inherit; }
-button, input[type=date] { padding: .5rem .7rem; border: 1px solid #677996; border-radius: .4rem; }
-button { cursor: pointer; }
-:focus-visible { outline: 3px solid #83d9ff; outline-offset: 3px; }
-canvas { display: block; width: 100%; height: clamp(21rem, 60vh, 41rem); background: #060b14; border-radius: .65rem; touch-action: none; }
-#status { min-height: 1.4em; margin: .65rem 0; color: #ffd99a; }
-.note, dt { color: #b9c8dd; }
-dl { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
-dd { margin: .3rem 0 0; font-variant-numeric: tabular-nums; }
+:root {
+    color-scheme: dark;
+    font: 16px Inter, system-ui, sans-serif;
+    background: #0e1726;
+    color: #eff4fc;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: min(100% - 2rem, 65rem);
+    margin: 2rem auto;
+
+}
+
+.controls, .controls > * {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .7rem;
+
+}
+
+.controls {
+    gap: 1rem 2rem;
+
+}
+
+button, input {
+    font: inherit;
+}
+
+button, input[type=date] {
+    padding: .5rem .7rem;
+    border: 1px solid #677996;
+    border-radius: .4rem;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+:focus-visible {
+    outline: 3px solid #83d9ff;
+    outline-offset: 3px;
+
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: clamp(21rem, 60vh, 41rem);
+    background: #060b14;
+    border-radius: .65rem;
+    touch-action: none;
+
+}
+
+#status {
+    min-height: 1.4em;
+    margin: .65rem 0;
+    color: #ffd99a;
+
+}
+
+.note, dt {
+    color: #b9c8dd;
+
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+
+}
+
+dd {
+    margin: .3rem 0 0;
+    font-variant-numeric: tabular-nums;
+
+}
